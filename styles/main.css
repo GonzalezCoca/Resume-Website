@@ -125,4 +125,10 @@ li{
         border-left: none;
         padding-left: 0;
     }
+    #socials--list{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 0;
+        flex-wrap: wrap;
+    }
 }
