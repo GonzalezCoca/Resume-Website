@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor:#c0571f;
+    --secondaryTextColor: black;
+    --mainLinkColor:#0da2b8;
+    --mainBorderColor:rgb(194, 194, 194);
+    --mainBgColor:rgb(249, 250,251);
+}
+
+*{
+    font-family: 'Readex pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body{
+    background-color: var(--mainBgColor);
+}
+
+p,span,li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-size: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+#username{
+    font-size: 3em;
+    line-height: 1em;
+}
+#bio,a{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+#email{
+    color: var(--secondaryTextColor);
+}
+
+#socials--list{
+    display: flex;
+    font-size: 1.2em;
+    justify-content: flex-start;
+    column-gap: 1em;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#socials--list a{
+    color: var(--secondaryTextColor);
+    transition: 0.2s;
+}
+#socials--list a:hover{
+    color: var(--mainLinkColor);
+}
+
+#qualifications--list{
+    list-style: none;
+}
+
+#wrapper--tech{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 1em;
+}
+.card--tech{
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+.card--work{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+#work--name{
+    color: black;
+}
+@media(max-width:600px){
+    #wrapper--hero{
+        flex-direction: column;
+        gap: 0;
+    }
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .card--work{
+        border-left: none;
+        padding-left: 0;
+    }
+}
