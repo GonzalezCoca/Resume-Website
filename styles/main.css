@@ -70,13 +70,9 @@ li{
 
 #socials--list{
     display: flex;
-    font-size: 1.2em;
-    justify-content: flex-start;
+    justify-content: space-between;
     column-gap: 1em;
     flex-wrap: wrap;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #socials--list a{
