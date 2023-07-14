@@ -41,7 +41,7 @@ li{
 
 .section--page{
     padding-top: 1em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 
 #wrapper--hero{
@@ -71,7 +71,7 @@ li{
 #socials--list{
     display: flex;
     justify-content: space-between;
-    column-gap: 1em;
+    column-gap: 20px;
     flex-wrap: wrap;
 }
 
